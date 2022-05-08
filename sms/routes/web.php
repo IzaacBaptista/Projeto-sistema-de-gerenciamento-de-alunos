@@ -18,10 +18,10 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', 'StudentController@index');
-Route::get('/edit/{id}', 'StudentController@edit');
-Route::get('/show/{id}', 'StudentController@show');
-Route::get('/create', 'StudentController@create');
+Route::get('/', [StudentController::class, 'index']);
+Route::get('/edit/{id}', [StudentController::class, 'edit']);
+Route::get('/show/{id}', [StudentController::class, 'show']);
+Route::get('/create', [StudentController::class, 'create']);
 
-Route::post('/store', 'StudentController@store');
-Route::post('/update/{id}', 'StudentController@update');
+Route::post('/store', [StudentController::class, 'store']);
+Route::post('/update/{id}', [StudentController::class, 'update']);
