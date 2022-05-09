@@ -14,17 +14,18 @@
   <body>
     @include("navbar")
     <div class="row header-container justify-content-center">
-        <div class="header">
+        <div class="header justify-content-center">
             <h1>Student Management System</h1>
         </div>
     </div>
     @if($layout == 'index')
         <div class="container-fluid mt-4">
-            <div class="row">
-                <section class="col-md-7">
-                    @include("studentslist")
-                </section>
-                <section  class="col-md-5"></section>
+            <div class="container-fluid mt-4">
+                <div class="row justify-content-center">
+                    <section class="col-md-7">
+                        @include("studentslist")
+                    </section>
+                </div>
             </div>
         </div>
     @elseif($layout == 'create')
