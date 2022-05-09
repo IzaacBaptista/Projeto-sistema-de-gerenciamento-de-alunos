@@ -1,4 +1,10 @@
-    <table class="table">
+<div class="card mb-3">
+    <img src="https://img2.gratispng.com/20180503/jpe/kisspng-student-school-5aebbd7b235849.3158393115253989071448.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">List of students</h5>
+      <p class="card-text">You can find here all the informations about the students in the system.</p>
+
+      <table class="table">
         <thead class="thead-light">
             <tr>
                 <th scope="col">CNE</th>
@@ -25,3 +31,7 @@
             @endforeach
         </tbody>
     </table>
+
+    </div>
+  </div>
+
