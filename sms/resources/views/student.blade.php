@@ -11,6 +11,8 @@
     <title>Student management system</title>
   </head>
   <body>
+    @include("navbar")
+
 
     @if($layout == 'index')
         <div class="container-fluid">
